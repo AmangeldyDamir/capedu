@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+
+    <p id="ParagraphOne">number 1</p>
+    <script>
+        //var number = prompt('Number: ')
+        //if (number > 0) {
+            //console.log('The number is positive')
+        //}
+        //else {
+            //console.log('The number is negative')
+        //}
+
+        //var numbers = [2, 5, 8, 3, 10, 18, 4, 3.5, 1, -1, 20, -15];
+
+        //numbers.sort((a, b) => a - b);
+        //console.log(numbers)
+
+        //var highestNumber = Math.max(...numbers);
+        //console.log('The highest number:', highestNumber);
+
+
+        //numbers.reverse();
+        //console.log(numbers);
+
+        //var highestNumber = Math.max(...numbers);
+        //console.log('The highest number:', highestNumber);
+
+        var car = {
+            color: 'green',
+            brand: 'BMX',
+            IsDriving: false,
+            speed: 120,
+            
+            drive: function(time) {
+                console.log('Driving...');
+                this.IsDriving = true;
+                distance = time * this.speed;
+                console.log('Driven:' + distance + ' km');
+                this.stop();
+                return distance;
+            },
+
+            stop: function() {
+                this.IsDriving = false
+                console.log('Car arrived')
+            }
+        }
+        
+        console.log(car)
+    </script>
+</body>
+</html>

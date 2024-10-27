@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <script>
+        var divs = document.getElementsByClassName('box')
+        console.log(divs)
+
+        for (var i = 0; i < divs.length; i++) {
+            divs[i].style.height = '100px';
+            divs[i].style.width = '100px';
+            divs[i].style.backgroundColor = 'red';
+            divs[i].style.margin = '20px';
+            divs[i].style.flexwrap = 'wrap';
+            console.log(divs[i])
+        }
+
+        for (var i = 1; i < divs.length; i+=100) {
+            divs[i].style.backgroundColor = 'orange'
+        }
+
+        for (var i = 2; i < divs.length; i+=100) {
+            divs[i].style.backgroundColor = 'yellow'
+        }
+
+        for (var i = 3; i < divs.length; i+=100) {
+            divs[i].style.backgroundColor = 'black'
+        }
+
+        for (var i = 4; i < divs.length; i+=100) {
+            divs[i].style.backgroundColor = 'cyan'
+        }
+
+        for (var i = 5; i < divs.length; i+=100) {
+            divs[i].style.backgroundColor = 'gray'
+        }
+
+        for (var i = 6; i < divs.length; i+=100) {
+            divs[i].style.backgroundColor = 'violet'
+        }
+
+        for (var i = 7; i < divs.length; i+=100) {
+            divs[i].style.backgroundColor = 'dodgerblue'
+        }
+
+        for (var i = 8; i < divs.length; i+=100) {
+            divs[i].style.backgroundColor = 'maroon'
+        }
+
+        for (var i = 9; i < divs.length; i+=100) {
+            divs[i].style.backgroundColor = 'green'
+        }
+
+        for (var i = 9; i < divs.length; i+=100) {
+            divs[i].style.backgroundColor = 'rust'
+        }
+    </script>
+</body>
+</html>

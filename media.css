@@ -1,0 +1,88 @@
+@media all and (min-width: 1150px) {
+    .trsprnt:hover {
+        background-color: #00897b;
+        border-color: transparent;
+    }
+
+    .green:hover {
+        border: 2px solid;
+        background-color: transparent;
+    }
+
+    .nav-link:hover {
+        background-color: gray;
+        color: white;
+    }
+
+    .cheese:hover {
+        background-color: rgb(159, 193, 195);;;
+        color: rgb(0, 0, 0);;
+        transform:scale(1.05);
+        box-shadow: 0 0 40px 5x rgba(0, 0, 0, 0.3);
+    }
+
+    .cheese:hover .readmore {
+        border-color: #fff;
+        color: rgb(159, 193, 195);;;
+    }
+
+    .cheese2:hover {
+        background-color: rgb(159, 193, 195);;;
+        color: #000000;
+        transform:scale(1.05);
+        box-shadow: 0 0 40px 5x rgba(0, 0, 0, 0.3);
+    }
+
+    .cheese2:hover .readmore {
+        border-color: #fff;
+        background-color: rgb(159, 193, 195);;;
+    }
+    
+    .cheese3:hover {
+        background-color: rgb(159, 193, 195);;;
+        color: #000000;
+        transform:scale(1.05);
+        box-shadow: 0 0 40px 5x rgba(0, 0, 0, 0.3);
+    }
+
+    .cheese3:hover .readmore {
+        border-color: #fff;
+        background-color: rgb(159, 193, 195);;;
+    }
+
+    .cheese4:hover {
+        background-color: rgb(159, 193, 195);;;
+        color: #000000;
+        transform:scale(1.05);
+        box-shadow: 0 0 40px 5x rgba(0, 0, 0, 0.3);
+    }
+
+    .cheese4:hover .readmore {
+        border-color: #fff;
+        background-color: rgb(159, 193, 195);;;
+    }
+
+    .cheese5:hover {
+        background-color: rgb(159, 193, 195);;;
+        color: #000000;
+        transform:scale(1.05);
+        box-shadow: 0 0 40px 5x rgba(0, 0, 0, 0.3);
+    }
+
+    .cheese5:hover .readmore {
+        border-color: #fff;
+        background-color: rgb(159, 193, 195);;;
+    }
+
+    .cheese6:hover {
+        background-color: rgb(159, 193, 195);;;
+        color: #000000;
+        transform:scale(1.05);
+        box-shadow: 0 0 40px 5x rgba(0, 0, 0, 0.3);
+    }
+
+    .cheese6:hover .readmore {
+        border-color: #fff;
+        background-color: rgb(159, 193, 195);;;
+    }
+}

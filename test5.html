@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9th lesson</title>
+</head>
+<body>
+    <input type="text" id="text" />
+
+    <script>
+        var text = document.getElementById('text');
+
+        var changeText = function() {
+            console.log(this.value);
+        }
+
+        var focusin = function() {
+            console.log('Clicked on input and text can be inserted');
+        },
+
+        focusout = function() {
+            console.log('Clicked out of input and text cant be seen');
+        }
+
+        text.addEventListener('focus', focusin, false);
+        text.addEventListener('blur', focusout, false);
+    </script>
+</body>
+</html>

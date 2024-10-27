@@ -1,0 +1,26 @@
+        body {
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(113, 113, 113);
+        }
+        
+        
+        p {
+            color: red;
+            font-size: 30px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+         } 
+        div {
+            width: 70%;
+            margin: auto;
+            background-color: #7f7f7f;
+            border-radius: 10px;
+        }
+
+        .logo {
+            max-width: 150px;
+            height: auto;
+            display: block;
+        }
+
+        

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oranges</title>
+
+    <style>
+        body {
+            height: 10000px;
+            background-color: orange;
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #box {
+            width: 50%;
+            height: 100%;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+        }
+
+        #h1 {
+            margin-top: 0;
+
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        .blur {
+            filter: blur(5px);
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h1 id="h1">Oranges</h1>
+        <img src="oranges.png" data-src='oranges1.png' alt="" class="blur">
+        <p id="text1">The orange, also called sweet orange to distinguish it from the bitter orange (Citrus × aurantium), is the fruit of a tree in the family Rutaceae.</p>
+        
+        <img src="oranges.png" data-src='oranges1.png' alt="" class="blur">
+        <p id="text2">Botanically, this is the hybrid Citrus × sinensis, between the pomelo (Citrus maxima) and the mandarin orange (Citrus reticulata).</p>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var box = document.getElementById('box');
+            var counter = 0;
+            lazyImages = [].slice.call(document.querySelectorAll('.blur'));
+            console.log(lazyImages, lazyImages instanceof Array);
+
+            function LazyLoad() {
+                // var lazy = document.querySelector('.blur');
+                lazyImages.forEach(function(lazy) {
+                    counter++;
+                    console.log(lazy.getBoundingClientRect());
+                    console.log('Height of viewport: ' + window.innerHeight);
+                    console.log(counter);
+                    if(lazy.getBoundingClientRect.top <= window.innerHeight) {
+                        if(lazy.hasAttribute('data-src')) {
+                            console.log('test');
+                            var data = lazy.getAttribute('data-src');
+                            lazy.setAttribute('src', data);
+                            lazy.removeAttribute('data-src');
+                            lazy.classList.remove('blur');
+                        }
+                        }
+                    });
+                
+            
+                
+
+                document.removeEventListener('scroll', LazyLoad);
+
+            }
+
+                document.addEventListener('scroll', LazyLoad, false);
+            })
+
+            
+            /*document.addEventListener('scroll',
+            function() {
+                ++counter;
+                console.log('scrolled.' + counter);}, false); */ 
+            
+            var obj = {},
+            number = 10,
+            string = 'im a string.'
+
+    function logThis() {
+        console.log(this);
+    }
+
+    logThis();
+    logThis.call(obj);
+    logThis.call(number);
+    logThis.call(string);
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <div id = 'box1'>
+        <p id="text1">number 1</p>
+        <p id="text2">number 2</p>
+        <p id="text3">number 3</p>
+        <p id="text4">number 4</p>
+    </box>
+    
+    <script>
+        var p = document.createElement('p');
+        var beforep = document.getElementById('text1');
+        p.append('im from append');
+
+        p.id = 'before';
+        p.style.backgroundColor = 'red';
+        p.style.color = 'white'
+
+        var box1 = document.getElementById('box1');
+        box1.insertBefore(p, beforep);
+
+        var link = document.createElement('a');
+        link.textContent = 'click me';
+        link.setAttribute('href', 'https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0');
+        link.style.cssText = 'font-size: 24px; \ color: orange; \ ';
+        document.body.prepend(link)
+    </script>
+</body>
+</html>

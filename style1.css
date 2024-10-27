@@ -1,0 +1,18 @@
+            body {
+                font-size: 20px;
+                font-family: sans-serif;
+                background-color: rgb(113, 113, 113);
+            }
+
+            h {
+                color: rgb(0, 0, 0);
+                font-size: 30px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+             }
+
+            div {
+                width: 70%;
+                margin: auto;
+                background-color: #7f7f7f;
+                border-radius: 10px;
+             }
